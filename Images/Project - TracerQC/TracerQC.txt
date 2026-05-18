@@ -1,0 +1,17 @@
+racer QC: innovative solution for Quality Control of radiopharmaceuticals.  
+
+ Currently marketed by LabLogic. Protected by US Patents 11846621, 11002717, 10895563
+
+ Quality control is the biggest bottleneck in manufacturing radiopharmaceuticals. Unlike conventional drugs made in large batches, these radioactive medicines are often produced one dose at a time—often for individual patients—but must still meet the same strict regulations as mass-produced injectables. That means every single dose requires full QC testing. The challenge intensifies with short-lived isotopes, which can decay within hours—leaving almost no time for testing before the product becomes unusable. Speed isn’t just helpful here—it’s essential.
+
+ QC in radiopharma typically relies on a dedicated lab packed with standalone machines and a skilled technician running the battery of tests, sometimes many times a day. It’s costly, has  compliance risks, and is a major staffing headache. The work is repetitive but demands high qualifications, and the few people who fit the bill often leave for more engaging roles. It can be  a constant churn of hiring and training for some companies.
+
+ To tackle these challenges, my co-founder and I launched a startup and brought Tracer-QC to market—the first fully integrated QC platform for radiopharma. With single-button operation, Tracer-QC replaces the entire QC lab with one compact system. Unlike past overengineered solutions, we reimagined QC from the ground up: redesigning the tests to run on a standard plate reader and automating the workflow with a pipetting robot. No complex machinery.
+
+ The biggest hurdle was reinventing QC tests to work with optical readouts. As CTO, I built and led the scientific team behind this breakthrough. We developed novel colorimetric indicators for detecting specific organic solvents, a disposable radiation sensor for measuring radiochemical purity, and several other proprietary assays—now protected by TraceAbility patents and trade secrets. It was a complete rethinking of how radiopharma QC can be done.
+
+ The U.S. FDA took a strong interest in Tracer-QC, backing its development with significant funding and expert guidance. That support came with high expectations, particularly around analytical method validation. At the same time, major radiopharma companies piloted the system at select production sites, providing critical feedback to ensure seamless integration into real-world workflows.
+
+ Creating a validation plan that met FDA standards was a major challenge — and one that ultimately led me to study statistics and machine learning at Berkeley. Executing that plan at a third-party facility gave me hands-on experience in technology transfer and the complexities of real-world procedure development. It was a crash course in bridging cutting-edge innovation with regulatory rigour.
+
+ After successful completion of the development phase and a few pilot installations I exited this business and currently have no business ties to the company. Trace-QC is now installed in multiple academic and commercial centres.

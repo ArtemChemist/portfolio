@@ -1,0 +1,15 @@
+
+
+Finding bacterial colonies on Petri dishes is a routine method of controlling sterility in drug manufacturing processes. A sample is added to a Petri dish filled with an agar gel and then placed in an incubator to promote bacterial growth. For about 2 weeks after that, technicians check the plate daily and make a note if they see a colony on the plate.  Finding enough colonies means trouble: the samples was contaminated, which is a big problem for pharma manufacturing. This test is highly subjective,  just a human saying what they see, and technicians often have conflicting incentives as they would be the ones dealing with the fallout of finding contamination. Pharma companies could be interested to generate more objective records and make less biased decisions using computer vision and machine learning. 
+
+This is a recall-driven problem: missing a contaminated plate is far worse than labeling a negative plate a “positive.” People can consider using AI aid if it identifies at least 99% of contaminated plates (recall >99%). Precision matters less because all positive cases will be reviewed by a human expert anyway. Nevertheless, it should remain above approximately 30% to reduce the workload on human reviewers.
+
+Two approaches were compared: EffNet family for image classification and YOLOv8 for object detection. The best result with EffNet B5 after fine-tuning was a precision of 17% at a recall of 98%, not sufficient for use in production. While 98% recall is almost useful, 16% precision means that production personnel will have to review almost the same number of images as before, so there will be no gain in adding this AI to their workflow. 
+
+YOLOv8  model proved to be the best choice with 99% recall at 73% precision. The performance of the fine-tuned  YOLO model is good enough to be used in the production environment: it only misclassifies 1 out of 100 positive samples. The advantages of using this model are very clear: 3 out of 4 images presented for human review are real contamination events. This is about a 100-fold reduction in the workload for a QA specialist.
+
+The next step in this project is the development a practical hardware to take images and handle samples in an automated fashion. The true value of this model can only be realized if the whole sample analysis workflow is automated: from sample handling and imaging to decision making.
+
+Key words: CNN, OpenCV, Adaptive Filtering, Hough Transform, Python, TensorFlow, Keras, EffNet, YOLOv8, object detection
+
+Read the full story on Medium. See the code on GitHub
