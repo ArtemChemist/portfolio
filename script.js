@@ -5,10 +5,33 @@ const paras = s   => s.trim().split(/\n\n+/)
                       .map(p => `<p>${esc(p.trim().replace(/\n/g,' '))}</p>`)
                       .join('');
 
-// ── RENDER HERO TEXT ──────────────────────────────────────────
+// ── RENDER HERO TEXT + WORD CLOUD ────────────────────────────
 function renderHero() {
-  document.querySelector('.hero-tag').textContent = HERO.tag;
-  document.querySelector('.hero-bio').textContent = HERO.bio;
+  document.querySelector('.hero-name').textContent = HERO.name;
+  document.querySelector('.hero-tag').textContent  = HERO.tag;
+  document.querySelector('.hero-bio').textContent  = HERO.bio;
+
+  const wrap  = document.querySelector('.hero-photo-wrap');
+  const cx    = 270, cy = 270;          // center of 540×540 container
+  const words = HERO.keywords;
+  // font sizes cycling through values to add visual variety
+  const sizes = [.92, .80, .96, .78, .88, .96, .80, .88, .78, .92, .80, .78, .88];
+  // radius varies slightly per word so it looks organic, not mechanical
+  const radii = [205, 195, 215, 200, 195, 210, 200, 215, 195, 205, 200, 210, 195];
+
+  words.forEach((word, i) => {
+    const angle = (i / words.length) * 2 * Math.PI - Math.PI / 2; // start at top
+    const r     = radii[i];
+    const x     = cx + r * Math.cos(angle);
+    const y     = cy + r * Math.sin(angle);
+    const span  = document.createElement('span');
+    span.className   = 'wc-word';
+    span.textContent = word;
+    span.style.left     = x + 'px';
+    span.style.top      = y + 'px';
+    span.style.fontSize = sizes[i] + 'rem';
+    wrap.appendChild(span);
+  });
 }
 
 // ── RENDER PROJECTS ───────────────────────────────────────────
@@ -147,8 +170,24 @@ function observeFadeUps() {
   document.querySelectorAll('.fu').forEach(el => io.observe(el));
 }
 
+// ── FIT NAME TO WORD-CLOUD WIDTH ──────────────────────────────
+function fitName() {
+  const el     = document.querySelector('.hero-name');
+  const target = document.querySelector('.hero-photo-wrap').offsetWidth;
+  el.style.width = 'max-content'; // let it expand freely so offsetWidth = text width
+  let lo = 10, hi = 400;
+  while (hi - lo > 0.5) {
+    const mid = (lo + hi) / 2;
+    el.style.fontSize = mid + 'px';
+    if (el.offsetWidth <= target) lo = mid; else hi = mid;
+  }
+  el.style.fontSize = lo + 'px';
+  el.style.width = '';
+}
+
 // ── INIT ──────────────────────────────────────────────────────
 renderHero();
+fitName();
 renderProjects();
 renderEducation();
 renderExperience();
