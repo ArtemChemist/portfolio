@@ -9,9 +9,9 @@
 const HERO = {
   name: 'Artem Lebedev',
   tag:  'Data Scientist · Radiochemist · Entrepreneur',
-  bio:  `Radiochemist with broad experience in radiopharmaceutical development, GMP production,
-and clinical manufacturing. Applies data science and machine learning to accelerate
-drug development and medical imaging research. UC Berkeley MIDS graduate, based in Canada.`,
+  bio:  `R&D manager specializing in radiopharmaceuticals, radioisotope production, 
+  and chemistry automation. Direct responsibility for hiring and budget oversight across complex development programs. 
+  PhD in Chemistry from Moscow State University and a Master's in Data Sceince from UC Berkeley.`,
 };
 
 
