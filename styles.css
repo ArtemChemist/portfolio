@@ -105,13 +105,44 @@ button { font-family: var(--font); }
   -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
 }
 .hero-content { position: relative; max-width: 700px; width: 100%; }
+
+/* ── word-cloud photo block ── */
+.hero-photo-wrap {
+  position: relative;
+  width: 540px; height: 540px;
+  margin: 0 auto 8px;
+  flex-shrink: 0;
+}
 .hero-photo {
+  position: absolute;
   width: 280px; height: 280px;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 auto 28px;
   border: 3px solid rgba(100,255,218,.35);
   box-shadow: 0 0 0 6px rgba(100,255,218,.08);
+  z-index: 2;
+}
+.wc-word {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: rgba(100,255,218,.78);
+  font-weight: 500;
+  white-space: nowrap;
+  letter-spacing: .03em;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity .2s;
+}
+.hero-name {
+  font-weight: 800;
+  letter-spacing: -.02em;
+  color: #e6f1ff;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  display: block;
+  text-align: center;
 }
 .hero-tag {
   display: inline-block;
@@ -414,6 +445,13 @@ footer {
 .fu.vis { opacity: 1; transform: none; }
 
 /* ─── RESPONSIVE ──────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .hero-photo-wrap {
+    transform: scale(.6);
+    transform-origin: center top;
+    margin-bottom: -100px;
+  }
+}
 @media (max-width: 768px) {
   #nav ul { display: none; flex-direction: column; gap: 2px; }
   #nav ul.open {

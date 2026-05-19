@@ -7,10 +7,16 @@
 
 // ─── HERO ────────────────────────────────────────────────────
 const HERO = {
+  name: 'Artem Lebedev',
   tag:  'Data Scientist · Radiochemist · Entrepreneur',
   bio:  `Radiochemist with broad experience in radiopharmaceutical development, GMP production,
 and clinical manufacturing. Applies data science and machine learning to accelerate
 drug development and medical imaging research. UC Berkeley MIDS graduate, based in Canada.`,
+  keywords: [
+    'Statistics', 'Data Science', 'Python', 'SQL', 'Spark',
+    'R', 'Chemistry', 'GMP', 'Life Science', 'Isotopes',
+    'Ac-225', 'F-18', 'Pb-212',
+  ],
 };
 
 
