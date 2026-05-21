@@ -48,11 +48,18 @@ function renderProjects() {
       `<a href="${esc(l.url)}" target="_blank" rel="noopener" class="modal-link">${esc(l.label)}</a>`
     ).join('');
 
+    const modalHeroInner = p.modalImages
+      ? p.modalImages.map(src =>
+          `<img src="${esc(src)}" alt="${esc(p.title)}" loading="lazy" />`
+        ).join('')
+      : `<img src="${esc(p.modalImage)}" alt="${esc(p.title)}" />`;
+    const modalHeroClass = p.modalImages ? 'modal-hero modal-hero--tiles' : 'modal-hero';
+
     overlay.innerHTML = `
       <div class="modal">
         <button class="modal-close" aria-label="Close">&#x2715;</button>
-        <div class="modal-hero">
-          <img src="${esc(p.modalImage)}" alt="${esc(p.title)}" />
+        <div class="${modalHeroClass}">
+          ${modalHeroInner}
         </div>
         <div class="modal-bd">
           <div class="modal-cat">${esc(p.category)}</div>

@@ -30,6 +30,12 @@ const PROJECTS = [
 for QA specialists reviewing sterility samples in pharmaceutical manufacturing.`,
     cardImage:  'Projects/Project - plates/processed.png',
     modalImage: 'Projects/Project - plates/sample_images.png',
+    modalImages: [
+      'Projects/Project - plates/1.jpg',
+      'Projects/Project - plates/2.jpg',
+      'Projects/Project - plates/3.jpg',
+      'Projects/Project - plates/4.jpg',
+    ],
     tags: ['YOLOv8', 'EfficientNet', 'OpenCV', 'Hough Transform', 'Adaptive Filtering', 'TensorFlow', 'Keras', 'Python'],
     fullText: `
 Finding bacterial colonies on Petri dishes is the standard method of controlling sterility in drug manufacturing. A sample is added to a dish filled with agar gel and incubated to promote bacterial growth. For two weeks, technicians check the plate daily. Finding colonies means contamination — a serious problem for pharma manufacturing. This test is highly subjective, and technicians often have conflicting incentives. Pharma companies could benefit from more objective, computer-vision-based records.
