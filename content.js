@@ -270,17 +270,29 @@ and computer vision — with hands-on projects in Python, R, Spark, SQL, BERT, a
 // ─── EXPERIENCE ──────────────────────────────────────────────
 
 const EXPERIENCE = [
+  {
+    dates:   '2025 – Present',
+    role:    'Director of R&D',
+    company: 'BWXT Medical — Kanata, Canada',
+    bullets: [
+      'Oversee development programs related to isotope production',
+      'Manage teams responsible for Ac-225, Pb-212, Ra-226 and Ga-68',
+      'Responsible for budget and staffing of the department',
+      'Grew R&D department from 4 to 22 people, including 3 line managers',
+      'Established development process in production-dominated organisation.',
+    ],
+  },
 
   {
-    dates:   '2024 – Present',
+    dates:   '2024 – 2025',
     role:    'R&D Scientist, Radiochemist',
     company: 'Canadian Nuclear Laboratories — Chalk River, Canada',
     bullets: [
-      'Developing production protocols for Ac-225 radiolabeling of peptides and antibody fragments.',
-      'Building ML-based image analysis workflows for biodosimetry assays.',
-      'Developing and validating mass-spectrometry techniques for Ac-225 labeled peptides.',
-      'Troubleshooting production challenges for Lu-177 / Zr-89 radiolabeled antibodies.',
-      'Constructed an isotope tracking system using Git for distributed access and accountability.',
+      'Developed production protocols for Ac-225 radiolabeling of peptides and antibody fragments.',
+      'Built ML-based image analysis workflow for biodosimetry assays.',
+      'Developed and validated mass-spectrometry techniques for Ac-225 labeled peptides.',
+      'Resolved production challenges for Lu-177 / Zr-89 radiolabeled antibodies.',
+      'Built an isotope tracking system using Git for distributed access and accountability.',
     ],
   },
 
@@ -289,32 +301,54 @@ const EXPERIENCE = [
     role:    'Manager, Commercial Operations',
     company: 'McMaster Nuclear Reactor — Hamilton, Canada',
     bullets: [
-      'Secured and expanded a major Lu-177 processing contract; grew global I-125 market share.',
+      'Secured and expanded a major Lu-177 processing contract',
+      'Ggrew global I-125 sales in Europe and China',
       'Developed a Flask-based sales dashboard for stakeholder reporting.',
       'Negotiated agreements for GMP-compliant Ho-166 manufacturing.',
     ],
   },
-
   {
-    dates:   'Co-founder & CTO',
+    dates:   '2020 – 2022',
+    role:    'Career break for additional eduction',
+    company: 'UC Berkeley Master in Data Sceince',
+    bullets: [
+      'Courses in Statistics, Research design, Machine Learning, Time Series, ML Engineering, Data at Scale',
+    ],
+  },
+  {
+    dates:   '2015 – 2019',
     role:    'Co-founder & CTO',
     company: 'TraceAbility (TracerQC) — Radiopharmaceutical QC Startup',
     bullets: [
       'Built and led the scientific team behind TracerQC — the first fully integrated, single-button QC system for radiopharmaceuticals.',
-      'Developed novel colorimetric assays, a disposable radiation sensor, and proprietary analytical methods (protected by US Patents 10895563, 11002717, 11846621).',
+      'Developed novel colorimetric assays, a disposable radiation sensor, and proprietary analytical methods',
       'Managed FDA interactions, analytical method validation, and pilot installations at major radiopharma sites.',
-      'Exited after successful development phase; product now marketed by LabLogic.',
+      'Exited after successful development phase',
+    ],
+  },
+
+   {
+    dates:   '2013-2015',
+    role:    'Associate Project Sceinctist',
+    company: 'UC Los Angeles — Los Angeles, USA',
+    bullets: [
+      'Developed an electrochemistry method for radiofluorinatuon of aromatic molecules',
+      'Designed and built a fully automated synthesizer for electrolitic radiofluorination: software, hardware, control boards',
+      'Synthesized the first metabolically stable radiolabeled COX-2 inhibitor with nanomolar affinity',
+      'Performed in-vivo studies of the molecule, demonstrating potential for inflammation imaging',
     ],
   },
 
   {
-    dates:   'Scientist, Radiochemistry',
-    role:    'Scientist, Radiochemistry',
-    company: 'Siemens Healthineers',
+    dates:   '2010-2013',
+    role:    'Staff Scientist',
+    company: 'Siemens Healthineers — Los Angeles, USA',
     bullets: [
-      'Developed the production and QC protocol for clinical-grade [F-18]-Fallypride using the world\'s first microfluidic synthesiser approved for human use.',
+      'Developed and validated for human use production of [F-18]-Fallypride using the world\'s first microfluidic synthesiser approved for clinical use..',
       'Transferred the process to UCSD radiopharmacy, enabling the first clinical trial doses produced with microfluidic technology (published in Lab on a Chip).',
       'Achieved specific activity up to 750 GBq/μmol — nearly 5× the previously reported value.',
+      'Actively contributed to the design of radiochemical synthesizers, including CAD modeling and software development',
+      'Validated for clinical production 3 synthesis protocols: [F-18]-FLT, [F-18]-HX-4 and Amyvid',
     ],
   },
 
