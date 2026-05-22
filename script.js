@@ -53,7 +53,9 @@ function renderProjects() {
           `<img src="${esc(src)}" alt="${esc(p.title)}" loading="lazy" />`
         ).join('')
       : `<img src="${esc(p.modalImage)}" alt="${esc(p.title)}" />`;
-    const modalHeroClass = p.modalImages ? 'modal-hero modal-hero--tiles' : 'modal-hero';
+    const modalHeroClass = p.modalImages ? 'modal-hero modal-hero--tiles'
+      : p.containImage ? 'modal-hero modal-hero--contain'
+      : 'modal-hero';
 
     overlay.innerHTML = `
       <div class="modal">

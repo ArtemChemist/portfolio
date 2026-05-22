@@ -195,6 +195,7 @@ After successful in-house testing, the process was transferred to the UCSD radio
 a new synthetic approach that preserves target-binding affinity. Published in PLOS One.`,
     cardImage:  'Projects/Project - COX-2/in+vitro.png',
     modalImage: 'Projects/Project - COX-2/pone.0176606.g008.png',
+    containImage: true,
     tags: ['Electrosynthesis', 'F-18 Radiochemistry', 'COX-2 Inhibitor', 'PET Imaging', 'Inflammation', 'In Vitro / In Vivo', 'Automated Synthesis'],
     fullText: `
 Most painkillers — from Tylenol to ibuprofen — work by inhibiting cyclooxygenases, the enzymes that trigger the inflammatory signalling cascade. COX-2, one subtype, is specifically associated with induced inflammation, often linked to cancer. Radiolabelling a COX-2 inhibitor to image inflammation with PET is a compelling idea, but previous attempts were plagued by metabolic instability or loss of binding affinity.
