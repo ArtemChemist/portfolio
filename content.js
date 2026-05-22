@@ -49,8 +49,8 @@ YOLOv8 proved to be the clear winner: 99% recall at 73% precision. This means on
 The next step is developing practical hardware for automated sample handling and imaging, as the full value of the model can only be realised in a fully automated workflow.
     `,
     links: [
-      { label: 'Read on Medium →', url: 'https://medium.com/@lebedevfedora' },
-      { label: 'View Code →',      url: 'https://github.com/ArtemChemist' },
+      { label: 'Read on Medium →', url: 'https://medium.com/@lebedevfedora/how-to-find-bacteria-colonies-in-petri-dishes-f9acd5853d08' },
+      { label: 'View Code →',      url: 'https://github.com/ArtemChemist/CFU_counter' },
     ],
   },
 
@@ -76,8 +76,8 @@ The full system ran on AWS infrastructure: EC2 for training, S3 and Postgres RDS
 The solution has the potential to shift consumer behaviour by providing visual, brand-specific information at the critical moment of purchasing — and the low cross-brand confusion means brands are not unfairly penalised for competitors' packaging.
     `,
     links: [
-      { label: 'View Code →',     url: 'https://github.com/ArtemChemist' },
-      { label: 'Project Site →',  url: '#' },
+      { label: 'View Code →',     url: 'https://github.com/artem-chemist-learning/litter-imagery-brand-recognition' },
+      { label: 'Project Site →',  url: 'https://www.ischool.berkeley.edu/projects/2024/litter-log' },
     ],
   },
 
@@ -88,7 +88,8 @@ The solution has the potential to shift consumer behaviour by providing visual, 
     title:      'Flight Delay Prediction at Scale',
     shortDesc:  `Distributed ensemble model predicting departure delays 2 hours in advance,
 trained on 150 GB / 30 M+ flight records with Apache Spark on Databricks.`,
-    cardImage:  'Projects/Project - delays/Final pipeline.png',
+    cardImage:  'Projects/Project - delays/Models_on_test.jpg',
+    containCard: true,
     modalImage: 'Projects/Project - delays/data_workflow.png',
     tags: ['Apache Spark', 'MLlib', 'Random Forest', 'Logistic Regression', 'MLP', 'Databricks', 'Azure Blob Storage', 'Time Series'],
     fullText: `
@@ -101,8 +102,8 @@ Three models were compared: logistic regression, random forest, and a multi-laye
 The winning ensemble achieved 26.5% precision at 80% recall on the held-out test set, compared to 18% for a random baseline. The modest improvement likely reflects the absence of aircraft maintenance data — a known driver of delays that is not publicly available.
     `,
     links: [
-      { label: 'View Code →',      url: 'https://github.com/ArtemChemist' },
-      { label: 'Read on Medium →', url: 'https://medium.com/@lebedevfedora' },
+      { label: 'View Code →',      url: 'https://github.com/artem-chemist-learning/team_5_3' },
+      { label: 'Read on Medium →', url: 'https://medium.com/@lebedevfedora/is-my-flight-going-to-leave-on-time-0958f69abe0a' },
     ],
   },
 
@@ -128,7 +129,7 @@ From a 1997 perspective, the model predicted the 420 ppm threshold would be cros
 The surprisingly strong performance of a model built on 1997 data suggests that no effective action against CO₂ emissions has materially altered the trend in the intervening 25 years.
     `,
     links: [
-      { label: 'View Code →', url: 'https://github.com/ArtemChemist' },
+      { label: 'View Code →', url: 'https://github.com/artem-chemist-learning/W271_Lab2' },
     ],
   },
 
@@ -155,6 +156,7 @@ With over 70% correlation between predicted and observed values, this model give
     `,
     links: [
       { label: 'Read on Medium →', url: 'https://medium.com/@lebedevfedora' },
+      { label: 'View Code →', url: 'https://github.com/artem-chemist-learning/w266_project' },
     ],
   },
 
@@ -182,7 +184,7 @@ I also identified that Teflon tubing and Kalrez O-rings were major contributors 
 After successful in-house testing, the process was transferred to the UCSD radiopharmacy, where live patients were treated with material produced by our synthesiser — the world's first clinical doses made with microfluidic technology.
     `,
     links: [
-      { label: 'Published in Lab on a Chip →', url: '#' },
+      { label: 'Published in Lab on a Chip →', url: 'https://doi.org/10.1039/C2LC40853H' },
     ],
   },
 
@@ -211,7 +213,7 @@ In vitro validation using macrophage-like cells activated with endotoxin demonst
 Improvement in specific activity remains the critical next step for clinical translation.
     `,
     links: [
-      { label: 'Published in PLOS One →', url: '#' },
+      { label: 'Published in PLOS One →', url: 'https://doi.org/10.1371/journal.pone.0176606' },
     ],
   },
 
@@ -234,9 +236,11 @@ As CTO, I built and led the scientific team responsible for the core technology:
 
 The US FDA took strong interest in TracerQC, backing development with significant funding and expert guidance. This came with high expectations around analytical method validation — challenges that ultimately drove me to pursue the MIDS programme at UC Berkeley. Major radiopharma companies piloted the system at select production sites, providing critical real-world feedback.
 
-After completing the development phase and successfully delivering pilot installations, I exited the company. TracerQC is now installed in multiple academic and commercial centres, sold and supported by LabLogic.
+After completing the development phase and successfully delivering pilot installations, I exited the company. TracerQC is now installed in multiple academic and commercial centres.
     `,
-    links: [],
+    links: [{ label: 'Product video →', url: 'https://traceabilityinc.com/' },
+
+    ],
   },
 
 ];
@@ -336,7 +340,7 @@ const EXPERIENCE = [
 
    {
     dates:   '2013-2015',
-    role:    'Associate Project Sceinctist',
+    role:    'Associate Project Scientist',
     company: 'UC Los Angeles — Los Angeles, USA',
     bullets: [
       'Developed an electrochemistry method for radiofluorinatuon of aromatic molecules',
