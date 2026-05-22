@@ -165,7 +165,7 @@ With over 70% correlation between predicted and observed values, this model give
     title:      'Clinical [F-18]-Fallypride via Microfluidic Synthesis',
     shortDesc:  `First human doses of a PET radiotracer produced with microfluidic technology.
 Developed and transferred the production and QC protocol to UCSD for clinical trial use. Published in Lab on a Chip.`,
-    cardImage:  'Projects/Project - Fallypride/Fallypride.png',
+    cardImage:  'Projects/Project - Fallypride/brain_scan.jpg',
     modalImage: 'Projects/Project - Fallypride/Main-parts-of-the-reactor-assembly-Left-schematic-cross-section-of-the-reactor-cavity_W640.jpg',
     tags: ['Radiochemistry', 'F-18 Labeling', 'PET Imaging', 'Microfluidics', 'HPLC Purification', 'GMP', 'Clinical Production', 'Specific Activity'],
     fullText: `

@@ -23,7 +23,7 @@ function renderProjects() {
     card.className   = 'project-card fu';
     card.dataset.modal = p.id;
     card.innerHTML = `
-      <div class="card-img">
+      <div class="card-img${p.containCard ? ' card-img--contain' : ''}">
         <img src="${esc(p.cardImage)}" alt="${esc(p.title)}" loading="lazy" />
       </div>
       <div class="card-body">
